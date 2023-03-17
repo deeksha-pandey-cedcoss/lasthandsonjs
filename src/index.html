@@ -340,6 +340,39 @@ function checkEqual(a, b) {
 checkEqual(1, 2);
 
 //task 22
+function checkSign(num) 
+{
+return (num===0)?"zero":(num>0)?"positive":"negative";
+}
+
+checkSign(10);
+
+//task 23
+// Only change code below this line
+function countdown(n)
+{ if(n<1)
+{
+  return [];
+
+}
+else
+{
+const arr=countdown(n-1);
+arr.unshift(n);
+  return arr;
+}
+
+}
+//task24
+function rangeOfNumbers(startNum, endNum) 
+{ 
+   return endNum < startNum
+    ? []
+    : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+  
+}
+
+
 
 </script>
 </body>
